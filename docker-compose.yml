@@ -40,4 +40,7 @@ volumes:
   keycloak:
     driver: local
 
+networks:
+  keycloak_net:
+
 
