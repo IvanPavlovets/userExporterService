@@ -6,9 +6,8 @@ services:
       - POSTGRES_PASSWORD=password
       - POSTGRES_USER=postgres
       - POSTGRES_DB=keycloakdb
-      - PGDATA=/var/lib/postgresql/keycloakdb
     volumes:
-      - ./db/keycloakdb:/var/lib/postgresql/keycloakdb
+      - ./db/keycloakdb:/var/lib/postgresql/data
     ports:
       - "5435:5432"
     networks:
